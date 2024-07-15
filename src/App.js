@@ -1,10 +1,14 @@
 import Registration from "./pages/registration/Registration";
+import {BrowserRouter, Route, Router, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Registration/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Registration/>}/>
+      </Routes>
+    </BrowserRouter>
+      
   );
 }
 
